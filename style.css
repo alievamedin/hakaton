@@ -1,0 +1,368 @@
+*{
+    background-color:#2c2c33;
+    /* overflow: hidden; */
+}
+/* nav start  */
+.container{
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    background-color:darkgrey;
+   
+}
+.navbar__div{
+    display: flex;
+    justify-content: flex-start;
+   align-items: flex-start;
+   background-color: darkgray;
+  
+}
+.navbar__div img{
+    background-color: darkgray;
+}
+.navbar__div h2{
+    background-color: darkgray;
+}
+
+.links a{
+    background-color: darkgray;
+}
+.links {
+    width: 382px;
+    display: flex;
+    justify-content:space-around;
+   text-align: center;
+    align-items: center;
+    background-color: darkgray;
+    
+  }
+  
+  /* nav end */
+  /* block resume start  */
+  .block{
+display: flex;
+justify-content:space-around;
+margin-top: 10%;
+margin-left: 15%;
+margin-right: 15%;
+border: 100%;
+background-color:whitesmoke;
+  }
+
+
+    .block__img{
+       display: flex;
+      
+    }
+    .block__img img{
+        width: 303px;
+       
+    }
+    .block__name{
+        display: flex;
+      justify-content: center;
+     
+    }
+    .block__name h1{
+    font-size: 400%;
+   color:thistle;
+}
+/* block resume end */
+/* about self start */
+.aboutself{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6%;
+ 
+}
+.aboutself__about{
+  padding: 3%;
+  margin-bottom: 3%;
+background-color: darkgray;
+
+
+}
+.aboutself__about img{
+width:60px;
+background-color: darkgrey;
+}
+.aboutself__about h2{
+  background-color: darkgray;
+}
+.aboutself__about h4{
+    background-color: darkgray;
+}
+/* about self end */
+/* Additional information start */
+.Additional{
+  /* background-color: darkgrey; */
+}
+.Additional__information{
+  font-size: 300%;
+ 
+}
+/* Additional information end */
+/* page end start */
+.pageend{
+    margin-top: 10%;
+    display: flex;
+    justify-content:space-around;
+   align-items: center;
+   background-color: darkgray;
+}
+.pageend img{
+    background-color: darkgray;
+}
+.pageend h2{
+    background-color: darkgray;
+}
+.pageend__iconki{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pageend__img{
+display: flex;
+background-color: darkgray;
+}
+/* page end end */
+
+    /* skills start */
+    .container1{ 
+        width: 100%; 
+        background-color: rgb(39, 37, 37); 
+      }
+      .html { 
+        width: 90%; 
+        background-color: #4caf50; 
+      } 
+      .css { 
+        width: 80%; 
+        background-color: #2196f3; 
+      } 
+      .js { 
+        width: 65%; 
+        background-color: #f44336; 
+      } 
+      .php { 
+        width: 60%; 
+        background-color: #808080; 
+      }
+      .skills { 
+        text-align: right; 
+        padding-right: 20px; 
+        line-height: 40px; 
+        color: white; 
+      }
+      
+            
+    /* skills end */
+    /* burger menu start */
+.burger_menu {
+    background-color: darkgray;
+    display: none;
+    width: 98%;
+    height: min-content;
+    background-color: #2c2c33;
+    position: absolute;
+    z-index: 1;
+    right: 1%;
+    left: 1%;
+    top: 1%;
+    border-radius: 10px;
+    border: 2px solid white;
+  }
+  .burger_menu_content {
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brg_m_btn_close {
+    
+    width: 4%;
+    height: 4%;
+    margin: 4%;
+    cursor: pointer;
+  }
+  .brg_m_input {
+   
+    width: 30%;
+    height: 10%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+  }
+  .burger_m_list {
+   
+    height: 60%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .brg_m_li > a {
+   
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+  }
+  .brg_m_li > a:hover {
+    
+    color: #5454d4;
+    transition: 0.8s;
+  }
+  
+  
+  #menu__toggle {
+  
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+  
+  .menu__btn {
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+ 
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: white;
+  
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+   
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+  
+    content: "";
+    top: 8px;
+  }
+  
+  .menu__box {
+   
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #eceff1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  
+    transition-duration: 0.25s;
+  }
+  
+  .menu__item {
+    
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: 0.25s;
+  }
+  .menu__item:hover {
+    background-color: darkgray;
+    background-color: #cfd8dc;
+  }
+  .hamburger-menu {
+    background-color: darkgray;
+    display: none;
+
+  }
+   /* burger menu end*/
+   @media all and (max-width: 1000px) {
+    .burger_menu{
+        background-color: #808080;
+    }
+
+   }
+   .block{
+    flex-wrap: wrap;
+   }
+   .container1{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+   }
+
+
+@media all and (max-width: 750px) {
+
+    .container{
+        justify-content: flex-start;
+    }
+.links{
+
+    display: none;
+}
+    .info-block__btm {
+      width: 47%;
+      font-size: 25px;
+    }
+    .hamburger-menu{
+      display: block;
+    }
+    .menu__btn{
+      display: block;
+    }
+  }
+  @media all and (max-width: 750px) {
+
+  }
